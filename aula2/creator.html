@@ -5,72 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PageMaker</title>
     <script src="funcoes.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <h1>Cabeçalho</h1>
-        Texto para Cabeçalho
-        <input type="text" name="textoCabecalho" id="textoCabecalho">
-        <br>
-        Cor da Fonte
-        <select name="corFonte" id="corFonte">
-            <option>--</option>
-            <option value="#FF0000" style="background-color: red;">Vermelho</option>
-            <option value="#00FF00" style="background-color: green;">Verde</option>
-            <option value="#0000FF" style="background-color: blue;">Azul</option>
-            <option value="#FFF000" style="background-color: yellow;">Amarelo</option>
-            <option value="#FFA500" style="background-color: orange;">Laranja</option>
-            <option value="#800080" style="background-color: purple;">Roxo</option>
-        </select><br>
-        Cor de Fundo
-        <select name="corFundo" id="corFundo">
-            <option>--</option>
-            <option value="#FF0000" style="background-color: red;">Vermelho</option>
-            <option value="#00FF00" style="background-color: green;">Verde</option>
-            <option value="#0000FF" style="background-color: blue;">Azul</option>
-            <option value="#FFF000" style="background-color: yellow;">Amarelo</option>
-            <option value="#FFA500" style="background-color: orange;">Laranja</option>
-            <option value="#800080" style="background-color: purple;">Roxo</option>
-        </select><br>
-        Tamanho do Texto
-        <select name="tamFonte" id="tamFonte">
-            <option>--</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-        </select><br>
+    <div class="cabecalhoLinks">
+        <div class="divCabecalho">
+            <br>
+            <h1>Cabeçalho</h1><br><br>
+            <p><b>Texto para Cabeçalho</b></p>
+            <input type="text" name="textoCabecalho" id="textoCabecalho" placeholder="texto...">
+            <br>
+            <p><b>Cor da Fonte</b></p>
+            <select name="corFonte" id="corFonte">
+                <option>--</option>
+                <option value="#FF0000" style="background-color: red;">Vermelho</option>
+                <option value="#00FF00" style="background-color: green;">Verde</option>
+                <option value="#0000FF" style="background-color: blue;">Azul</option>
+                <option value="#FFF000" style="background-color: yellow;">Amarelo</option>
+                <option value="#FFA500" style="background-color: orange;">Laranja</option>
+                <option value="#800080" style="background-color: purple;">Roxo</option>
+            </select><br>
+            <p><b>Cor de Fundo</b></p>
+            <select name="corFundo" id="corFundo">
+                <option>--</option>
+                <option value="#FF0000" style="background-color: red;">Vermelho</option>
+                <option value="#00FF00" style="background-color: green;">Verde</option>
+                <option value="#0000FF" style="background-color: blue;">Azul</option>
+                <option value="#FFF000" style="background-color: yellow;">Amarelo</option>
+                <option value="#FFA500" style="background-color: orange;">Laranja</option>
+                <option value="#800080" style="background-color: purple;">Roxo</option>
+            </select><br>
+            <p><b>Tamanho do Texto</b></p>
+            <select name="tamFonte" id="tamFonte">
+                <option>--</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+            </select><br>
+        </div>
+        <div class="divLinks">
+            <br>
+            <h1>Links</h1><br><br>
+            <p><b>Links:</b></p>
+            <input type="text" name="links" id="links" placeholder="link..."><br>
+            <p><b>Cor dos Links:</b></p>
+            <select name="colorLinks" id="colorLinks">
+                <option>--</option>
+                <option value="#FF0000" style="background-color: red;">Vermelho</option>
+                <option value="#00FF00" style="background-color: green;">Verde</option>
+                <option value="#0000FF" style="background-color: blue;">Azul</option>
+                <option value="#FFF000" style="background-color: yellow;">Amarelo</option>
+                <option value="#FFA500" style="background-color: orange;">Laranja</option>
+                <option value="#800080" style="background-color: purple;">Roxo</option>
+            </select><br>
+            <p><b>Estilo do Link:</b></p><br>
+            <div class="inputs">
+                <input type="radio" name="estiloLinks" id="estiloLinks" value="1"><p>Sublinhado</p>
+                <input type="radio" name="estiloLinks" id="estiloLinks" value="0"><p>Não Sublinhado</p>
+            </div>
+            
+            
+            
+        </div>
     </div>
-    <div>
-        <h1>Links</h1>
-        Links:
-        <input type="text" name="links" id="links" placeholder="link1;link2;link3..."><br>
-        Cor dos Links:
-        <select name="colorLinks" id="colorLinks">
-            <option>--</option>
-            <option value="#FF0000" style="background-color: red;">Vermelho</option>
-            <option value="#00FF00" style="background-color: green;">Verde</option>
-            <option value="#0000FF" style="background-color: blue;">Azul</option>
-            <option value="#FFF000" style="background-color: yellow;">Amarelo</option>
-            <option value="#FFA500" style="background-color: orange;">Laranja</option>
-            <option value="#800080" style="background-color: purple;">Roxo</option>
-        </select><br>
-        Estilo do Link:<br>
-        <input type="radio" name="estiloLinks" id="estiloLinks" value="1">Sublinhado<br>
-        <input type="radio" name="estiloLinks" id="estiloLinks" value="0">Não Sublinhado<br>
-        <button onclick="gerarCodigo()">Gerar Código</button>
+    
+    <div class="gerarCodigo">
+        <button  onclick="gerarCodigo()"><b>Gerar Código</b></button>
     </div>
 
-    <div>
-        <textarea cols="100" rows="30" id="codeHTML"></textarea><br>
-        <button onclick="download('codeHTML','index.html')">Download do Código HTML</button>
+    <div class="caixasCodigos">
+        <div class="caixaCodigo">
+            <textarea cols="100" rows="30" id="codeHTML"></textarea><br>
+            <button onclick="download('codeHTML','index.html')"><b>Download do HTML</b></button>
+        </div>
+    
+        <div class="caixaCodigo">
+            <textarea cols="100" rows="30" id="codeCSS"></textarea><br>
+            <button onclick="download('codeCSS','estilo.css')"><b>Download do CSS</b></button>
+        </div>
     </div>
-
-    <div>
-        <textarea cols="100" rows="30" id="codeCSS"></textarea><br>
-        <button onclick="download('codeCSS','estilo.css')">Download do Código CSS</button>
-    </div>
+    
 </body>
 </html>
