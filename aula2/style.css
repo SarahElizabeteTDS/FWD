@@ -11,7 +11,7 @@
 body
 {
     background-color: #DDF2FD;
-    color: #9BBEC8;
+    color: #DDF2FD;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -28,7 +28,7 @@ body
 {
     padding-left: 40px;
     display: flex;
-    background-color: #EEF7FF;
+    background-color: #056a73;
     flex-direction: column;
     width: 15vw;
     height: 100vh;
@@ -45,7 +45,7 @@ body
     padding-top: 123px;
     padding-left: 40px;
     display: flex;
-    background-color: #EEF7FF;
+    background-color: #056a73;
     flex-direction: column;
     width: 20vw;
     height: 100vh;
@@ -95,10 +95,10 @@ body
 
 .gerarCodigo button
 {
-    color: #83a7b1;
+    color: #056a73;
     width: 15vh;
     height: 5vh;
-    background-color: #cfdfee;
+    background-color: #DDF2FD;
     border-style: none;
     border-radius: 10px;
 }
@@ -128,7 +128,7 @@ body
 
 .caixaCodigo button
 {
-    color: #83a7b1;
+    color: #68868f;
     width: 15vh;
     height: 3vh;
     background-color: #cfdfee;
@@ -139,6 +139,11 @@ body
 .caixaCodigo button:hover
 {
     background-color: #becfdf;
+}
+
+input
+{
+    padding: 5px;
 }
 
 .inputs 
