@@ -10,8 +10,9 @@
 <body>
     <div class="cabecalhoLinks">
         <div class="divCabecalho">
-            <br>
-            <h1>Cabeçalho</h1><br><br>
+            <h1>PageMaker</h1>
+            <br><br><br>
+            <h2>Cabeçalho</h2><br>
             <p><b>Texto para Cabeçalho</b></p>
             <input type="text" name="textoCabecalho" id="textoCabecalho" placeholder="texto...">
             <br>
@@ -45,10 +46,12 @@
                 <option value="16">16</option>
                 <option value="17">17</option>
             </select><br>
+            <div class="gerarCodigo">
+                <button  onclick="gerarCodigo()"><b>Gerar Código</b></button>
+            </div>
         </div>
         <div class="divLinks">
-            <br>
-            <h1>Links</h1><br><br>
+            <h2>Links</h2><br>
             <p><b>Links:</b></p>
             <input type="text" name="links" id="links" placeholder="link..."><br>
             <p><b>Cor dos Links:</b></p>
@@ -63,16 +66,16 @@
             </select><br>
             <p><b>Estilo do Link:</b></p><br>
             <div class="inputs">
-                <input type="radio" name="estiloLinks" id="estiloLinks" value="1"><p>Sublinhado</p>
-                <input type="radio" name="estiloLinks" id="estiloLinks" value="0"><p>Não Sublinhado</p>
+                <input type="radio" name="estiloLinks" id="estiloLinks" value="1">
+                <label id="labelUm">Sublinhado</label><br><br>
+                <input type="radio" name="estiloLinks" id="estiloLinks" value="0">
+                <label id="labelDois">Não Sublinhado</label>
             </div>
+            
         </div>
+        
     </div>
     
-    <div class="gerarCodigo">
-        <button  onclick="gerarCodigo()"><b>Gerar Código</b></button>
-    </div>
-
     <div class="caixasCodigos">
         <div class="caixaCodigo">
             <textarea cols="100" rows="30" id="codeHTML"></textarea><br>
