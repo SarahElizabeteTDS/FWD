@@ -12,38 +12,47 @@ body
 {
     background-color: #DDF2FD;
     color: #9BBEC8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .cabecalhoLinks
-{
-    padding-top: 100px;
+{ 
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 .divCabecalho
 {
+    padding-left: 40px;
     display: flex;
-    border-radius: 25px;
     background-color: #EEF7FF;
-    align-items: center;
     flex-direction: column;
-    width: 40vh;
-    margin: 0vh 0vh 5vh 30vh;
+    width: 15vw;
+    height: 100vh;
+}
+
+.divCabecalho h1
+{
+    padding-top: 30px;
+
 }
 
 .divLinks
 {
+    padding-top: 123px;
+    padding-left: 40px;
     display: flex;
-    border-radius: 25px;
     background-color: #EEF7FF;
-    align-items: center;
     flex-direction: column;
-    width: 40vh;
-    margin: 0vh 30vh 5vh 0vh;
+    width: 20vw;
+    height: 100vh;
+
 }
 
-.divCabecalho select,input
+.divCabecalho select
 {
     border-style: none;
     border-radius: 10px;
@@ -51,27 +60,44 @@ body
     height: 2vh;
 }
 
-.divLinks select,input
+#textoCabecalho
 {
     border-style: none;
     border-radius: 10px;
     width: 20vh;
     height: 2vh;
+}
+
+#links
+{
+    border-style: none;
+    border-radius: 10px;
+    width: 20vh;
+    height: 2vh; 
+}
+
+.divLinks select
+{
+    border-style: none;
+    border-radius: 10px;
+    width: 20vh;
+    height: 2vh;
+    flex-direction: column;
 }
 
 .gerarCodigo
 {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5vh;
+    justify-content: start;
+    align-items: start;
+    margin-top: 5vh;
 }
 
 .gerarCodigo button
 {
     color: #83a7b1;
     width: 15vh;
-    height: 3vh;
+    height: 5vh;
     background-color: #cfdfee;
     border-style: none;
     border-radius: 10px;
@@ -85,13 +111,19 @@ body
 .caixasCodigos
 {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20vh;
+    gap: 15px;
 }
 
 .caixaCodigo textarea
 {
     border-radius: 15px;
     padding: 10px;
+    width: 880px;
+    height: 400px;
 }
 
 .caixaCodigo button
@@ -109,19 +141,8 @@ body
     background-color: #becfdf;
 }
 
-.inputs
+.inputs 
 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;  
-}
-
-.inputs input
-{
-    width: 50px; 
-}
-
-.inputs p 
-{
-    padding-bottom: 15px;
+    float: left;
+    clear: none;
 }
