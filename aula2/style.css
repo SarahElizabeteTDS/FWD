@@ -28,7 +28,7 @@ body
 {
     padding-left: 40px;
     display: flex;
-    background-color: #056a73;
+    background-color: #057a85;
     flex-direction: column;
     width: 15vw;
     height: 100vh;
@@ -42,10 +42,10 @@ body
 
 .divLinks
 {
-    padding-top: 123px;
+    padding-top: 117px;
     padding-left: 40px;
     display: flex;
-    background-color: #056a73;
+    background-color: #057a85;
     flex-direction: column;
     width: 20vw;
     height: 100vh;
@@ -95,7 +95,7 @@ body
 
 .gerarCodigo button
 {
-    color: #056a73;
+    color: #057a85;
     width: 15vh;
     height: 5vh;
     background-color: #DDF2FD;
@@ -128,7 +128,7 @@ body
 
 .caixaCodigo button
 {
-    color: #68868f;
+    color: #057a85;
     width: 15vh;
     height: 3vh;
     background-color: #cfdfee;
