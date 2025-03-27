@@ -5,13 +5,25 @@ var ctxRodape;
 
 function configEstiloCabecalho()
 {
- bg=document.getElementById("corFundo").value;
- corFonte=document.getElementById("corFonte").value;
- tamFonte=document.getElementById("tamFonte").value;
- ctxCabecalho="#cabecalho{\n background-color:"+bg+";\n";
- ctxCabecalho+=" color:"+corFonte+";\n";
- ctxCabecalho+=" font-size:"+tamFonte+"pt;\n}\n";
- return ctxCabecalho;
+    bg=document.getElementById("corFundo").value;
+    corFonte=document.getElementById("corFonte").value;
+    tamFonte=document.getElementById("tamFonte").value;
+    ctxCabecalho="#cabecalho{\n background-color:"+bg+";\n";
+    ctxCabecalho+=" color:"+corFonte+";\n";
+    ctxCabecalho+=" font-size:"+tamFonte+"pt;\n}\n";
+    return ctxCabecalho;
+}
+
+function configHtmlLinks()
+{
+    links = document.querySelector("#links").value;
+    vetLinks = links.split(";");
+    ctxLinks = "";
+    for (let i = 0; i < vetLinks.length; i++) 
+    {
+        ctxLinks += '<a href="#">'+vetLinks[i]+'</a>';
+    }
+    return ctxLinks;
 }
 
 function configHTMLCabecalho()
@@ -23,7 +35,7 @@ function configHTMLCabecalho()
 
 function configEstiloLinks()
 {
-    corLink=document.getElementById("corLinks").value;
+    corLink=document.getElementById("colorLinks").value;
     estiloLinks=document.querySelector('input[name="estiloLinks"]:checked').value;
     ctxLinks="a{\n color:"+corLink+";\n";
     let aux=estiloLinks=="0"?"none":"underline";
