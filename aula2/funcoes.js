@@ -62,3 +62,15 @@ function gerarCodigo()
          "</body>\n</html>";
      codeHTML.value=ctxHTML;
 }
+
+function download(campo,arquivo)
+{
+    var text = document.getElementById(campo).value;
+    var blob = new Blob([text], {type:"text/plain"});
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = arquivo;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
